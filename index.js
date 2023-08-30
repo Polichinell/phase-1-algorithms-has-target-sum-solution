@@ -21,10 +21,27 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+
+  loop i go through array
+  loop j go through array
+  i = j ? continue
+  i != j {
+    i+j = target => true
+    else continue
+  }
+
+  => false if nothing matches
 */
 
 /*
   Add written explanation of your solution here
+
+    a first for loop for the first number, then a second for the following in the array
+  if it's the same, the loop continues
+  if num1 and num2 equals to the target, it returns true
+  otherwise it keeps looping
+
+  outside the loop, it returns false if it doesn't find a match for target
 */
 
 // You can run `node index.js` to view these console logs
